@@ -32,10 +32,10 @@ export default function CVViewerEnhanced({
           setIsPdfSupported(!!canView);
           document.body.removeChild(iframe);
         }, 100);
-      } catch (error) {
-        setIsPdfSupported(false);
-        document.body.removeChild(iframe);
-      }
+             } catch {
+         setIsPdfSupported(false);
+         document.body.removeChild(iframe);
+       }
     };
 
     checkPdfSupport();
@@ -174,9 +174,9 @@ export default function CVViewerEnhanced({
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">
                       PDF Viewer Not Available
                     </h3>
-                    <p className="text-gray-600 text-center mb-6 max-w-md">
-                      Your browser doesn't support PDF viewing. You can download the CV or open it in a new tab.
-                    </p>
+                                         <p className="text-gray-600 text-center mb-6 max-w-md">
+                       Your browser doesn&apos;t support PDF viewing. You can download the CV or open it in a new tab.
+                     </p>
                     <div className="flex flex-col sm:flex-row gap-3">
                       <button
                         onClick={handleDownloadCV}

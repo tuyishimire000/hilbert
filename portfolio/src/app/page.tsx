@@ -5,8 +5,6 @@ import {
   Github, 
   Linkedin, 
   Mail, 
-  Download, 
-  ArrowRight, 
   Code, 
   Palette, 
   Smartphone,
@@ -71,9 +69,9 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-6xl md:text-7xl font-bold text-black mb-6">
-                I'm <span className="luxury-accent">Hilbert TUYISHIMIRE</span>
-              </h1>
+                              <h1 className="text-6xl md:text-7xl font-bold text-black mb-6">
+                  I&apos;m <span className="luxury-accent">Hilbert TUYISHIMIRE</span>
+                </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
                 Full-stack developer passionate about creating elegant, user-centric digital experiences
               </p>
@@ -116,12 +114,12 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
                 <h3 className="text-2xl font-bold text-black mb-4">Passionate Developer</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  I'm a dedicated full-stack developer with a passion for creating beautiful, 
+                  I&apos;m a dedicated full-stack developer with a passion for creating beautiful, 
                   functional, and user-friendly applications. With expertise in modern web 
                   technologies, I bring ideas to life through clean code and innovative design.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  When I'm not coding, you can find me exploring new technologies, 
+                  When I&apos;m not coding, you can find me exploring new technologies, 
                   contributing to open-source projects, or sharing knowledge with the developer community.
                 </p>
               </div>
@@ -222,11 +220,11 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4">Let's Work Together</h2>
+            <h2 className="text-4xl font-bold mb-4">Let&apos;s Work Together</h2>
             <div className="w-24 h-1 bg-yellow-600 mx-auto"></div>
             <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. 
-              Let's discuss how we can bring your ideas to life.
+              I&apos;m always interested in new opportunities and exciting projects. 
+              Let&apos;s discuss how we can bring your ideas to life.
             </p>
           </motion.div>
           

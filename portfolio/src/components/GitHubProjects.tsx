@@ -46,7 +46,7 @@ export default function GitHubProjects({
         const data: GitHubRepo[] = await response.json();
         
         // Filter and sort repositories
-        let filteredRepos = data
+        const filteredRepos = data
           .filter(repo => !excludeForks || !repo.fork)
           .sort((a, b) => b.stargazers_count - a.stargazers_count)
           .slice(0, maxRepos);

@@ -11,7 +11,6 @@ interface CVDownloadAdvancedProps {
 export default function CVDownloadAdvanced({ showInfo = true }: CVDownloadAdvancedProps) {
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadStatus, setDownloadStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [selectedFormat, setSelectedFormat] = useState('pdf');
 
   const handleDownload = async (format: string = 'pdf') => {
     try {
@@ -150,11 +149,7 @@ export default function CVDownloadAdvanced({ showInfo = true }: CVDownloadAdvanc
               key={format.type}
               onClick={() => handleDownload(format.type)}
               disabled={isDownloading}
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 ${
-                selectedFormat === format.type
-                  ? 'bg-yellow-600 text-white'
-                  : 'bg-white/80 backdrop-blur-sm border border-white/20 text-black hover:bg-yellow-600 hover:text-white'
-              }`}
+              className="px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-white/20 text-black hover:bg-yellow-600 hover:text-white"
             >
               <span>{format.icon}</span>
               <span>{format.label}</span>
@@ -163,7 +158,7 @@ export default function CVDownloadAdvanced({ showInfo = true }: CVDownloadAdvanc
         </div>
 
         <button
-          onClick={() => handleDownload(selectedFormat)}
+          onClick={() => handleDownload('pdf')}
           disabled={isDownloading}
           className={getButtonClasses()}
         >
