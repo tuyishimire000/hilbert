@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --luxury-white: #ffffff;
+  --luxury-black: #0a0a0a;
+  --luxury-gold: #d4af37;
+  --luxury-gold-light: #f4e4a6;
+  --luxury-gray: #f8f8f8;
+  --luxury-dark-gray: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--luxury-black);
+  background: var(--luxury-white);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--luxury-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--luxury-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--luxury-gold-light);
+}
+
+/* Luxury gradient backgrounds */
+.luxury-gradient {
+  background: linear-gradient(135deg, var(--luxury-white) 0%, var(--luxury-gray) 100%);
+}
+
+.luxury-gradient-dark {
+  background: linear-gradient(135deg, var(--luxury-black) 0%, var(--luxury-dark-gray) 100%);
+}
+
+.luxury-gradient-gold {
+  background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--luxury-gold-light) 100%);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Luxury accent elements */
+.luxury-accent {
+  color: var(--luxury-gold);
+}
+
+.luxury-border {
+  border-color: var(--luxury-gold);
+}
+
+.luxury-bg-accent {
+  background-color: var(--luxury-gold);
+}
