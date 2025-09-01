@@ -6,7 +6,7 @@ export const githubConfig = {
   maxRepos: 50,
   
   // Whether to exclude forked repositories
-  excludeForks: true,
+  //excludeForks: true,
   
   // Sort repositories by (stars, updated, created)
   sortBy: 'stars' as 'stars' | 'updated' | 'created',
